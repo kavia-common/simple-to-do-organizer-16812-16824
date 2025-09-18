@@ -1,0 +1,90 @@
+:root {
+  --color-primary: #2563EB; /* Blue 600 */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-secondary: #F59E0B; /* Amber 500 */
+  --color-secondary-100: #fef3c7;
+  --color-error: #EF4444;
+  --color-bg: #f9fafb; /* Gray 50 */
+  --color-surface: #ffffff;
+  --color-text: #111827; /* Gray 900 */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --radius: 12px;
+}
+
+html, body, #__nuxt {
+  height: 100%;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 10px;
+  padding: .6rem .9rem;
+  font-weight: 600;
+  transition: all .2s ease;
+  border: 1px solid transparent;
+}
+
+.btn:hover { transform: translateY(-1px); }
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 8px 20px -8px rgba(37, 99, 235, .8);
+}
+.btn-primary:hover { filter: brightness(1.05); }
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: #1f2937;
+  box-shadow: 0 8px 20px -8px rgba(245, 158, 11, .8);
+}
+
+.btn-outline {
+  background: white;
+  color: var(--color-primary);
+  border-color: #bfdbfe;
+}
+.btn-outline:hover {
+  background: #eff6ff;
+}
+
+.input {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: .6rem .8rem;
+  transition: all .2s ease;
+  background: white;
+}
+.input:focus {
+  outline: none;
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 4px rgba(147, 197, 253, .35);
+}
+
+.tag {
+  font-size: .75rem;
+  border-radius: 9999px;
+  padding: .2rem .6rem;
+  background: #eff6ff;
+  color: #1e3a8a;
+  border: 1px solid #bfdbfe;
+}

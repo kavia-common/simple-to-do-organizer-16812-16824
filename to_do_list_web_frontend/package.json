@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "ocean-todo-nuxt",
   "private": true,
   "type": "module",
   "scripts": {
@@ -22,5 +22,6 @@
     "eslint": "^8.57.1",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.1"
-  }
+  },
+  "description": "Modern to-do list organizer with Ocean Professional theme (Nuxt 3)."
 }
